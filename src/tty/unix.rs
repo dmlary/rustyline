@@ -1257,6 +1257,7 @@ impl SigWinCh {
 }
 
 #[cfg(not(test))]
+#[allow(missing_docs)]
 pub type Terminal = PosixTerminal;
 
 #[derive(Clone, Debug)]

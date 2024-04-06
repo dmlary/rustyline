@@ -51,7 +51,8 @@ use log::debug;
 pub use rustyline_derive::{Completer, Helper, Highlighter, Hinter, Validator};
 use unicode_width::UnicodeWidthStr;
 
-use crate::tty::{Buffer, RawMode, RawReader, Renderer, Term, Terminal};
+use crate::tty::{Buffer, RawMode, RawReader, Renderer};
+pub use crate::tty::{Term, Terminal};
 
 #[cfg(feature = "custom-bindings")]
 pub use crate::binding::{ConditionalEventHandler, Event, EventContext, EventHandler};

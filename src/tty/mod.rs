@@ -220,6 +220,7 @@ pub trait ExternalPrinter {
 }
 
 /// Terminal contract
+#[allow(missing_docs)] // mire branch made this pub for real
 pub trait Term {
     type Buffer;
     type KeyMap;
